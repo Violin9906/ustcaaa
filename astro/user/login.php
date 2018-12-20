@@ -28,20 +28,20 @@
 	<form action="./checklogin.php?nextdo=<?php if($_GET['nextdo']){echo $_GET['nextdo'];}else{echo "%2Fastro%2Fuser";}?>" method="POST" class="form-horizontal" role="form">
 	<center><h3>中国科学技术大学天文爱好者协会<br />身份认证系统</h3><br /></center>
 		<div class="form-group">
-			<label for="stunb" class="col-sm-2 control-label">您的学号/工号</label>
-			<div class="col-sm-10">
+			<label for="stunb" class="col-sm-3 control-label">您的学号/工号</label>
+			<div class="col-sm-9">
 				<input type="text" class="form-control" id="stunb" name="stunb"/>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="password" class="col-sm-2 control-label">密码</label>
-			<div class="col-sm-10">
+			<label for="password" class="col-sm-3 control-label">密码</label>
+			<div class="col-sm-9">
 				<input type="password" class="form-control" id="raw-password"/>
 				<input type="hidden" id="md5-password" name="password" />
 			</div>
 		</div>
 		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
+			<div class="col-sm-offset-3 col-sm-9">
 				 <button type="submit" onClick="return checkinput()" class="btn btn-info"><span class="glyphicon glyphicon-log-in">&nbsp;登录</span></button>&nbsp;<button formaction="../signin" class="btn btn-default"><span class="glyphicon glyphicon-user">&nbsp;注册</span></button>
 			</div>
 		</div>

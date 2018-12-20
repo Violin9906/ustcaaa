@@ -19,8 +19,8 @@
 	<center><p style="color:#ff0000">学号为2个字母加8位数字，字母请用大写！</p></center>
 	<form name="emailform" action="./mail.php" onsubmit="return checkemail();" method="POST" class="form-horizontal" role="form">
 		<div class="form-group">
-			<label for="stunb" class="col-sm-2 control-label">您的科大邮箱地址</label>
-			<div class="col-sm-10">
+			<label for="stunb" class="col-sm-3 control-label">您的科大邮箱地址</label>
+			<div class="col-sm-9">
 				<input type="text" class="form-control" id="mail" name="mail" required="required"/><button formaction="./mail.php" class="btn btn-success"><span class="glyphicon glyphicon-envelope">&nbsp;发送验证邮件</span></button>
 			</div>
 		</div>
@@ -54,32 +54,32 @@
 	</script>
 	<form action="./checksignin.php" method="POST" class="form-horizontal" role="form">
 		<div class="form-group">
-			<label for="stunb" class="col-sm-2 control-label">您的学号/工号</label>
-			<div class="col-sm-10">
+			<label for="stunb" class="col-sm-3 control-label">您的学号/工号</label>
+			<div class="col-sm-9">
 				<input type="text" class="form-control" id="stunb" name="stunb" required="required"/>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="verifycode" class="col-sm-2 control-label">邮箱验证码</label>
-			<div class="col-sm-10">
+			<label for="verifycode" class="col-sm-3 control-label">邮箱验证码</label>
+			<div class="col-sm-9">
 				<input type="text" class="form-control" id="verifycode" name="verifycode" required="required"/>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="username" class="col-sm-2 control-label">您的姓名</label>
-			<div class="col-sm-10">
+			<label for="username" class="col-sm-3 control-label">您的姓名</label>
+			<div class="col-sm-9">
 				<input type="text" class="form-control" id="username" name="username" required="required"/>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="raw-password" class="col-sm-2 control-label">设置密码</label>
-			<div class="col-sm-10">
+			<label for="raw-password" class="col-sm-3 control-label">设置密码</label>
+			<div class="col-sm-9">
 				<input type="text" class="form-control" id="raw-password" required="required"/>
 				<input type="hidden" id="md5-password" name="password" />
 			</div>
 		</div>
 		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
+			<div class="col-sm-offset-3 col-sm-9">
 				 <button onClick="return checkinput()" class="btn btn-info"><span class="glyphicon glyphicon-user">&nbsp;注册</span></button>
 			</div>
 		</div>
